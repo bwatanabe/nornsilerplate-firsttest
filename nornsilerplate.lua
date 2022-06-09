@@ -52,7 +52,7 @@ end
 function redraw() -------------- redraw() is automatically called by norns
   screen.clear() --------------- clear space
   screen.aa(1) ----------------- enable anti-aliasing
-  ---animation_frame_bird = animation_frame_bird + 1
+  animation_frame_bird = animation_frame_bird + 1
   ---if animation_frame_bird > animation_bird_max then
   ---  animation_frame_bird = 1
   screen.display_png("/home/we/dust/code/nornsilerplate-firsttest/assets/bird01.png", 60, 0) -------bump
