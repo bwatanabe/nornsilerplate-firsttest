@@ -52,8 +52,8 @@ end
 function redraw() -------------- redraw() is automatically called by norns
   screen.clear() --------------- clear space
   screen.aa(1) ----------------- enable anti-aliasing
-  animation_frame_bird = animation_frame_bird+1
-  if animation_frame_bird > animation_bird_max
+  animation_frame_bird = animation_frame_bird + 1
+  if animation_frame_bird > animation_bird_max then
     animation_frame_bird = 1
   screen.display_png("/home/we/dust/code/nornsilerplate-firsttest/assets/bird0"..animation_frame_bird..".png", 60, 0) -------bump
   screen.display_png("/home/we/dust/code/nornsilerplate-firsttest/assets/item_grave01.png", 0, 0) -------bump
@@ -68,7 +68,7 @@ function redraw() -------------- redraw() is automatically called by norns
   screen.pixel(0, 63) ---------- and at the south-western
   screen.fill() ---------------- fill the termini and message at once
   screen.update() -------------- update space
-  screen_dirty = true
+  
 end
 
 
