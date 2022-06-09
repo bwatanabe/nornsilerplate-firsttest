@@ -62,7 +62,7 @@ function redraw() -------------- redraw() is automatically called by norns
   screen.font_size(8) ---------- set the size to 8
   screen.level(15) ------------- max
   screen.move(64, 40) ---------- move the pointer to x = 64, y = 32
-  --screen.text_center(message) -- center our message at (64, 32)
+  screen.text_center(message) -- center our message at (64, 32)
   screen.pixel(0, 0) ----------- make a pixel at the north-western most terminus
   screen.pixel(127, 0) --------- and at the north-eastern
   screen.pixel(127, 63) -------- and at the south-eastern
