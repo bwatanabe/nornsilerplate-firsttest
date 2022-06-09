@@ -48,7 +48,7 @@ end
 function redraw() -------------- redraw() is automatically called by norns
   screen.clear() --------------- clear space
   screen.aa(1) ----------------- enable anti-aliasing
-  screen.display_png("/home/we/dust/code/nornsilerplate-firsttest/assets/test.png", 0, 0) -------bump
+  screen.display_png("/home/we/dust/code/nornsilerplate-firsttest/assets/bird07.png", 0, 0) -------bump
   screen.font_face(1) ---------- set the font face to "04B_03"
   screen.font_size(8) ---------- set the size to 8
   screen.level(15) ------------- max
