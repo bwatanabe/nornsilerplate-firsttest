@@ -53,8 +53,9 @@ function redraw() -------------- redraw() is automatically called by norns
   screen.clear() --------------- clear space
   screen.aa(1) ----------------- enable anti-aliasing
   animation_frame_bird = animation_frame_bird + 1
-  ---if animation_frame_bird > animation_bird_max then
-  ---  animation_frame_bird = 1
+  if animation_frame_bird > animation_bird_max then
+    animation_frame_bird = 1
+  end
   screen.display_png("/home/we/dust/code/nornsilerplate-firsttest/assets/bird01.png", 60, 0) -------bump
   screen.display_png("/home/we/dust/code/nornsilerplate-firsttest/assets/item_grave01.png", 0, 0) -------bump
   screen.font_face(1) ---------- set the font face to "04B_03"
