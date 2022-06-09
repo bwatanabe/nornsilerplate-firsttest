@@ -49,15 +49,29 @@ function redraw_clock() ----- a clock that draws space
   end
 end
 
-function redraw() -------------- redraw() is automatically called by norns
-  screen.clear() --------------- clear space
-  screen.aa(1) ----------------- enable anti-aliasing
+function draw_big_bird()
   animation_frame_bird = animation_frame_bird + 1
   if animation_frame_bird > animation_bird_max then
     animation_frame_bird = 1
   end
   screen.display_png("/home/we/dust/code/nornsilerplate-firsttest/assets/bird0"..animation_frame_bird..".png", 45, 0) -------bump
-  screen.display_png("/home/we/dust/code/nornsilerplate-firsttest/assets/item_grave01.png", 0, 0) -------bump
+end
+
+function draw_item_grave()
+  if animation_frame_grave == 1 then
+    animation_frame_grave = 2
+  else
+    animation_frame_grave = 1
+  end
+  screen.display_png("/home/we/dust/code/nornsilerplate-firsttest/assets/item_grave0"..animation_frame_grave..".png", 0, 0) -------bump
+end
+
+
+function redraw() -------------- redraw() is automatically called by norns
+  screen.clear() --------------- clear space
+  screen.aa(1) ----------------- enable anti-aliasing
+  draw_big_bird()
+  draw_item_grave()
   screen.font_face(1) ---------- set the font face to "04B_03"
   screen.font_size(8) ---------- set the size to 8
   screen.level(15) ------------- max
