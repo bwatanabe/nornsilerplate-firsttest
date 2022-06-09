@@ -7,9 +7,9 @@
 -- >> e2:
 -- >> e3:
 
-animation_frame_bird = 1;
-animation_bird_max = 7;
-animation_frame_grave = 1;
+local animation_frame_bird = 1;
+local animation_bird_max = 7;
+local animation_frame_grave = 1;
 
 function init() ------------------------------ init() is automatically called by norns
   message = "NORNSILERPLATE" ----------------- set our initial message
